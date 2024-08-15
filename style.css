@@ -1,0 +1,27 @@
+* h1 {
+  font-size: 25px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+ul {
+  line-height: 1.5;
+}
+.container {
+  border: 2px dotted black;
+  height: 100svh;
+  width: 100svh;
+  display: flex;
+}
+
+.introduction {
+  height: fit-content;
+  width: 45svh;
+  border-style: solid;
+  border-color: black;
+  border-radius: 0%;
+  border-width: 2px;
+  padding: 5px;
+}
