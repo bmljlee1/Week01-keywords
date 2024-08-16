@@ -1,5 +1,31 @@
+body {
+  background-color: lightgoldenrodyellow;
+}
+
 * h1 {
-  font-size: 25px;
+  font-size: 40px;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+
+* h2 {
+  font-size: 30px;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  color: rgb(44, 44, 68);
+}
+
+/* font-weight - how bold */
+* h3 {
+  font-size: 20px;
+  font-weight: 700;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  color: darkred;
+}
+
+* p {
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
 }
 
 * {
@@ -8,20 +34,54 @@
 
 ul {
   line-height: 1.5;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
 }
 .container {
-  border: 2px dotted black;
+  /* border: 2px dotted black; */
   height: 100svh;
   width: 100svh;
   display: flex;
+  justify-content: space-around;
 }
 
 .introduction {
+  height: 1068.44px;
+  width: 45svh;
+  border-style: solid;
+  border-color: black;
+  border-radius: 5%;
+  border-width: 2px;
+  padding: 5px;
+}
+
+.howTheInternetWorks {
   height: fit-content;
   width: 45svh;
   border-style: solid;
   border-color: black;
-  border-radius: 0%;
+  border-radius: 5%;
   border-width: 2px;
   padding: 5px;
+}
+
+/* omg remember this hover css... It is so much easier thanthe rest! */
+/* Span tag is a container used to mark up a part of a text or document */
+.webServerImg {
+  display: none;
+}
+
+span:hover::after {
+  content: url(https://developer.mozilla.org/en-US/docs/Learn/Common_questions/Web_mechanics/What_is_a_web_server/web-server.svg);
+}
+.ipAddress {
+  display: none;
+}
+span1:hover::after {
+  content: url(https://cf-assets.www.cloudflare.com/slt3lc6tev37/4tzfU9Y5ows0uT3u4GUlWr/9d4eaa83ce372454cc14d5fec83fb5b1/internet_protocol_ip_address_diagram.svg);
+}
+.gif-DNS {
+  display: none;
+}
+span2:hover::after {
+  content: url(https://i.makeagif.com/media/3-30-2021/7hrFaM.gif);
 }
